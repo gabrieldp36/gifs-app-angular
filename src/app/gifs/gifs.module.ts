@@ -4,11 +4,11 @@ import { CommonModule } from '@angular/common';
 
 import { FormsModule } from '@angular/forms';
 
-import { GifsPageComponent } from './gifs-page/gifs-page.component';
+import { GifsPageComponent } from './components/gifs-page/gifs-page.component';
 
-import { BusquedaComponent } from './busqueda/busqueda.component';
+import { BusquedaComponent } from './components/busqueda/busqueda.component';
 
-import { ResultadosComponent } from './resultados/resultados.component';
+import { ResultadosComponent } from './components/resultados/resultados.component';
 
 @NgModule({
   declarations: [

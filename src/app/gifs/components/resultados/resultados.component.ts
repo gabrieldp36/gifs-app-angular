@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 
-import { GifsService } from '../services/gifs.service';
+import { GifsService } from '../../services/gifs.service';
 
-import { Gif } from '../interface/gifs.interfaces';
+import { Gif } from '../../interface/gifs.interfaces';
 
 @Component({
   selector: 'app-resultados',
