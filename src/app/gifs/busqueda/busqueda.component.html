@@ -1,0 +1,44 @@
+<form 
+    class="d-grid"
+    id="form"
+    (ngSubmit)="buscar()">
+
+    <!-- <input 
+        type="text" 
+        class="form-control border-0" 
+        placeholder="Buscar Gifs..." 
+        id="buscarGifs"
+        (keyup.enter)="buscar()"
+        #txtBuscar
+    > -->
+
+    <input 
+        type="text" 
+        class="form form-control border-0 mb-3"
+        name="buscar"
+        placeholder="Buscar Gifs..."
+        autocomplete="off"
+        id="buscarGifs"
+        [(ngModel)]="terminoBusqueda"
+    >
+
+    <input 
+        type="number" 
+        class="form form-control border-0 mb-3"
+        name="extension"
+        placeholder="Número de resultados"
+        autocomplete="off"
+        id="extensionResultados"
+        [(ngModel)]="numeroResultados"
+    >
+
+    <select class="form-select border-0 mb-3" aria-label="Default select example" id="select" #select>
+        <option selected value="medium">Tamaño Gifs: Medium</option>
+        <option value="small">Tamaño Gifs: Small</option>
+        <option value="large">Tamaño Gifs: Large</option>
+      </select>
+
+    <button type="submit" class="btn btn-secondary" id="btnBuscar">
+        Buscar
+    </button>
+</form>

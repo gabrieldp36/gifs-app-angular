@@ -1,0 +1,68 @@
+<div class="container">
+    <div 
+        *ngIf=" tamanioGifs === 'small' "
+        class="row justify-content-around">
+        <div 
+            *ngFor="let gif of resultados"
+            class="col-md-2 col-sm-2 animate__animated animate__fadeIn animate__slow">
+            <div 
+                class="card mt-3 mb-3">
+                <img 
+                    [src]="gif.images.downsized_medium.url" 
+                    [alt]= "gif.title"
+                    class="card-img-top"
+                >
+                <div class="card-body">
+                    <p class="card-text">
+                        {{gif.title | titlecase}}
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div 
+        *ngIf=" tamanioGifs === 'medium' "
+        class="row justify-content-around">
+        <div 
+            *ngFor="let gif of resultados"
+            class="col-md-3 col-sm-3 animate__animated animate__fadeIn animate__slow">
+            <div 
+                class="card mt-3 mb-3">
+                <img 
+                    [src]="gif.images.downsized_medium.url" 
+                    [alt]= "gif.title"
+                    class="card-img-top"
+                >
+                <div class="card-body">
+                    <p class="card-text">
+                        {{gif.title | titlecase}}
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div 
+        *ngIf=" tamanioGifs === 'large' "
+        class="row justify-content-around">
+        <div 
+            *ngFor="let gif of resultados"
+            class="col-md-4 col-sm-4 animate__animated animate__fadeIn animate__slow">
+            <div 
+                class="card mt-3 mb-3">
+                <img 
+                    [src]="gif.images.downsized_medium.url" 
+                    [alt]= "gif.title"
+                    class="card-img-top"
+                >
+                <div class="card-body">
+                    <p class="card-text">
+                        {{gif.title | titlecase}}
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

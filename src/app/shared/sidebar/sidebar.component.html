@@ -1,0 +1,35 @@
+<div class="bg-dark border rigth p-3" id="sidebar">
+
+  <h3 class="text-light">
+    Gifs-App
+  </h3>
+
+  <hr class="text-light">
+
+  <div 
+    *ngIf="historial.length > 0"
+    class="d-grid gap-2">
+
+    <button 
+      class="btn btn-danger btn-sm" 
+      id="btnBorrar"
+      (click)="borrar()">
+      Borrar
+    </button>
+
+</div>
+
+  <div class="list-group list-reset mt-3">
+    
+    <a
+      *ngFor=" let termino of historial"
+      (click)="buscar(termino)"
+      class="list-group-item list-group-action animate__animated animate__bounce mt-2" 
+      href="#"
+      id="anchor"
+    >
+      {{termino | titlecase}}
+    </a>
+
+  </div>
+</div>
