@@ -36,7 +36,7 @@ export class GifsService {
 
     this.resultados = JSON.parse( localStorage.getItem('resultados')!) || [];
 
-    this.tamanioGifs = JSON.parse( localStorage.getItem('tamanioGifs')!) || '';
+    this.tamanioGifs = localStorage.getItem('tamanioGifs')! || '';
   };
 
   buscarGifs(termino: string, numeroResultados?: (number | string), tamanioGifs?: string ) {
@@ -51,7 +51,7 @@ export class GifsService {
 
     const terminoBusqueda: string = textoCortado.join('');
 
-    localStorage.setItem('tamanioGifs', JSON.stringify(this.tamanioGifs) );
+    localStorage.setItem('tamanioGifs', this.tamanioGifs);
 
     // Historial de búsqueda.
 
