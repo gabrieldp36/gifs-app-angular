@@ -1,4 +1,4 @@
-![image](https://github.com/gabrieldp36/gifs-app-angular/assets/88417383/9279d665-eeb8-4af5-9cc8-9ad3f4872bd4)
+![image](https://github.com/gabrieldp36/gifs-app-angular/assets/88417383/25d25aeb-bb59-4773-bca6-03dd2aaf6ff4)
 
 # Gifts App.
 
