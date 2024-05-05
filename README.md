@@ -1,3 +1,5 @@
+![image](https://github.com/gabrieldp36/gifs-app-angular/assets/88417383/9279d665-eeb8-4af5-9cc8-9ad3f4872bd4)
+
 # Gifts App.
 
 Esta aplicación permite realizar búsquedas de gifts en GIPHY!!
@@ -6,7 +8,7 @@ Permite seleccionar el número de resultados de búsqueda y el tamaño de los gi
 
 Asimismo, gestiona un historial con las últimas 10 búsquedas implementadas.
 
-Pueden visitar la App haciendo click en este link: https://zen-rosalind-c2540c.netlify.app/
+Pueden visitar la App haciendo click en este link: https://gifs-app-gdp.netlify.app/
 
 ### Notas:
 
